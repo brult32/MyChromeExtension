@@ -1,0 +1,2 @@
+# MyChromeExtension
+My Chrome Extension
