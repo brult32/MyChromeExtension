@@ -17,3 +17,15 @@ chrome.commands.onCommand.addListener(async (command) => {
     }
   }
 });
+
+function openImageSearch(query) {
+  if (!query) return;
+  const url = "https://google.com/search?num=10&udm=2&q=" + encodeURIComponent(query);
+  chrome.tabs.create({ url });
+}
+
+chrome.runtime.onMessage.addListener((message) => {
+  if (message.action === "search-image") {
+    openImageSearch(message.query);
+  }
+});

@@ -3,7 +3,10 @@
   "name": "BR MyChromeColor & Image Search",
   "version": "1.0",
   "description": "Replaces pure white and searches selected text on Google Images via shortcut.",
-  "permissions": ["scripting", "activeTab"],
+  "permissions": ["scripting", "activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "background": {
     "service_worker": "background.js"
   },

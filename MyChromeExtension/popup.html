@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: sans-serif; width: 220px; padding: 12px; margin: 0; }
+    label { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 13px; }
+    input[type="text"] { width: 36px; text-align: center; text-transform: uppercase; padding: 4px; }
+    button { width: 100%; padding: 6px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <label>
+    White Override
+    <input type="color" id="whiteColor" value="#f4ecd8">
+  </label>
+  <label>
+    Ctrl+ Key
+    <input type="text" id="shortcutKey" maxlength="1" value="q">
+  </label>
+  <button id="resetBtn" type="button">Reset Defaults</button>
+  <script src="popup.js"></script>
+</body>
+</html>
